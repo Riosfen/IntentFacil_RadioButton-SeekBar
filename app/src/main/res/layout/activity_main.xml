@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.samo_.intentfacil_radiobutton_seekbar.MainActivity"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdbGrupo"
+        android:layout_marginBottom="5dp">
+
+        <RadioButton
+            android:text="Fondo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbFondo"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="letra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbLetra"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true" />
+    </RadioGroup>
+
+    <TextView
+        android:text="rojo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRojo"
+        android:layout_margin="5dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barRojo"
+        android:layout_margin="5dp"
+        android:max="255"
+        android:progress="0" />
+
+    <TextView
+        android:text="verde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVerde"
+        android:layout_margin="5dp"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barVerde"
+        android:layout_margin="5dp"
+        android:max="255"
+        android:progress="0" />
+
+    <TextView
+        android:text="azul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAzul"
+        android:layout_margin="5dp"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barAzul"
+        android:layout_margin="5dp"
+        android:max="255"
+        android:progress="0" />
+
+    <Button
+        android:text="aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAceptar"
+        android:elevation="1dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:text="Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDevuelto"
+        android:layout_weight="0.18"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textColor="#FFF"/>
+</LinearLayout>
